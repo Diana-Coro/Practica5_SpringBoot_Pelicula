@@ -9,11 +9,24 @@ import org.springframework.context.annotation.Configuration;
 public class SwaggerConfig {
 
     @Bean
-    public OpenAPI apiInfo() {
+    public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
                         .title("API REST - Gestión de Películas")
-                        .description("Práctica 5 Backend Spring Boot con PostgreSQL y Swagger")
-                        .version("1.0.0"));
+                        .version("1.0.0")
+                        .description("""
+                                PRACTICA 5 - BACKEND SPRING BOOT
+                                
+                                Estudiante: Diana Coro Llave
+                                Carrera: Ingeniería de Sistemas
+                                Materia: Tecnologías Emergentes SIS-414 Grupo 2
+                                Universidad Autónoma Tomás Frías
+                                
+                                CRUD de la entidad Película utilizando:
+                                - Spring Boot
+                                - PostgreSQL
+                                - Swagger OpenAPI
+                                - Variables de Entorno
+                                """));
     }
 }
