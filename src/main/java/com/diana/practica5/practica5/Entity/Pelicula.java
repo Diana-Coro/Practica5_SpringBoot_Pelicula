@@ -3,7 +3,7 @@ package com.diana.practica5.practica5.Entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "peliculas")
+@Table(name = "pelicula")
 public class Pelicula {
 
     @Id
@@ -17,6 +17,18 @@ public class Pelicula {
 
     @Column(length = 1000)
     private String sinopsis;
+
+    public Pelicula() {
+    }
+
+    public Pelicula(Long id, String titulo, String director, Integer anioLanzamiento, String genero, String sinopsis) {
+        this.id = id;
+        this.titulo = titulo;
+        this.director = director;
+        this.anioLanzamiento = anioLanzamiento;
+        this.genero = genero;
+        this.sinopsis = sinopsis;
+    }
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
