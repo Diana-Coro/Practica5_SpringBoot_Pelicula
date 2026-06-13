@@ -17,16 +17,15 @@ public class SwaggerConfig {
                         .description("""
                                 PRACTICA 5 - BACKEND SPRING BOOT
                                 
-                                Estudiante: Diana Coro Llave
-                                Carrera: Ingeniería de Sistemas
-                                Materia: Tecnologías Emergentes SIS-414 Grupo 2
-                                Universidad Autónoma Tomás Frías
+                                -Estudiante: Diana Coro Llave 
+
+                                -Carrera: Ingeniería de Sistemas
+
+                                -Materia: Tecnologías Emergentes SIS-414 Grupo 2
                                 
-                                CRUD de la entidad Película utilizando:
-                                - Spring Boot
-                                - PostgreSQL
-                                - Swagger OpenAPI
-                                - Variables de Entorno
+                                -Universidad Autónoma Tomás Frías
+                                
+                                
                                 """));
     }
 }
